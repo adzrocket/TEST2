@@ -1,0 +1,994 @@
+
+
+html, body { padding: 0px; margin: 0px; width: 100%; height: 100%; }
+body { background: rgb(255, 255, 255) none repeat scroll 0% 0%; font: 11px Tahoma; color: rgb(1, 0, 0); min-width: 1347px; }
+table, tr, td { border-width: 0px; border-collapse: collapse; padding: 0px; margin: 0px; font: 11px Tahoma; }
+select, input { font-size: 11px; }
+td { text-align: left; vertical-align: top; }
+div { padding: 0px; margin: 0px; font: 11px Tahoma; }
+img { border: medium none; }
+h1, h2, h3 { font-weight: normal; font-size: 18px; }
+h1 { padding: 0px 0px 8px; font-size: 18px; margin: 0px; }
+h1 a { color: rgb(0, 0, 0); }
+p { margin: 0px; padding-bottom: 10px; }
+a { color: rgb(1, 136, 203); outline: medium none; }
+a:hover { text-decoration: none; }
+.clear { width: 0px; height: 0px; overflow: hidden; clear: both; line-height: 0; }
+.images { position: absolute; left: -1000px; top: -1000px; }
+.annotation, .annotations { display: none; }
+.all { width: 100%; height: 100%; }
+.bottom { height: 65px; background-color: rgb(220, 220, 220); vertical-align: middle; color: rgb(102, 102, 102); }
+.bottom .bottom-left { float: left; text-align: left; }
+.bottom .bottom-right { float: right; text-align: left; padding: 12px 25px 0px 0px; }
+.bottom .bottom-right a { color: rgb(102, 102, 102); text-decoration: none; }
+.bottom .bottom-right a:hover { text-decoration: underline; }
+.finch { float: right; margin: 2px 5px 0px 0px; }
+.actis { float: right; margin: 15px 20px 0px 0px; }
+.middle { background: transparent url('topvector6.jpg')/*tpa=http://blogistars.com/ds/lc/afrikantova/topvector6.jpg*/ no-repeat scroll center -53px; }
+.bottom-bg { background: transparent url('botvector6.jpg')/*tpa=http://blogistars.com/ds/lc/afrikantova/botvector6.jpg*/ no-repeat scroll center bottom; height: 100%; width: 100%; }
+.top-banner { height: 1px; }
+.max-width { width: 96%; max-width: 1300px; width: 1300px; }
+.content { padding-top: 10px; padding-bottom: 20px; }
+.center-content { width: 100%; }
+.toolbar-wrapper { position: relative; height: 53px; width: 100%; min-width: 1000px; z-index: 100; }
+.toolbar-wrapper div.bg { height: 72px; width: 100%; position: fixed; z-index: 1000; background: transparent url('header_bg.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/header_bg.png*/ repeat-x scroll 0% 0%; }
+.toolbar-wrapper .toolbar { position: relative; margin: 0px auto; height: 53px; }
+.toolbar .user-logo { width: 350px; min-width: 350px; height: 30px; margin-top: 7px; padding-top: 10px; float: left; text-align: left; overflow: hidden; z-index: 1; position: relative; }
+.toolbar-wrapper .toolbar .avatar-img { margin: -10px 20px 0px 0px; float: left; }
+.toolbar-wrapper .toolbar .toolbar__logo { margin-top: -2px; }
+.toolbar .header-nav { background: transparent url('header_bg.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/header_bg.png*/ repeat-x scroll 0% 0%; position: relative; z-index: 10; min-width: 620px; float: right; margin-left: -500px; }
+:first-child + html .toolbar .header-nav { margin-left: 120px; }
+.toolbar .header-menu { float: left; margin-right: 10px; }
+.toolbar ul li a, .user-logo a { display: block; height: inherit; text-decoration: none; font-size: 16px; font-family: Arial,serif; font-weight: bold; }
+.toolbar ul li a { float: left; color: rgb(94, 94, 94); }
+.toolbar .user-logo a { color: rgb(255, 255, 255); }
+.toolbar ul li.active a, .toolbar ul li a:hover { color: rgb(255, 255, 255); }
+.toolbar div.exit { float: right; margin-left: 20px; }
+.toolbar div.exit ul li { height: 30px; display: block; margin-top: 12px; padding: 0px 10px; float: left; }
+.toolbar div.exit ul li.exit { border-right: 1px dotted rgb(94, 94, 94); padding: 0px 10px 0px 0px; }
+.toolbar div.exit ul li.exit a.item { height: 22px; padding-top: 3px; border-bottom: 1px dashed rgb(94, 94, 94); }
+.toolbar div.exit ul li.exit a.item:hover { color: rgb(255, 255, 255); border-bottom: 1px dashed rgb(255, 255, 255); }
+.toolbar .header-menu .login_form { margin-top: 10px; white-space: nowrap; }
+.toolbar .header-menu .login_form img { float: left; margin-top: 10px; }
+.toolbar .header-menu .formItem { display: inline-block; margin: 3px 0px 0px 10px; vertical-align: top; }
+.toolbar .header-menu .formItem input, .toolbar .header-menu .formItem input:active { outline: 0px none; border: 0px none; margin: 0px; padding: 0px; }
+.toolbar .header-menu .formItem_text { border-radius: 2px; height: 22px; padding: 3px 3px 0px; margin-top: 5px; width: 100px; background: transparent -moz-linear-gradient(center top , rgb(214, 214, 214) 0%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%) repeat scroll 0% 0%; }
+.toolbar .header-menu .formItem_text input.text, .toolbar .header-menu input.search-text { border: medium none; background: transparent none repeat scroll 0% 0%; color: rgb(153, 153, 153); width: 100%; }
+.toolbar .header-menu .formItem_submit { margin-top: 3px; }
+.toolbar .header-menu .quick-search-box { margin-top: 15px; width: 80px; }
+.toolbar .header-menu .noactive { background: transparent -moz-linear-gradient(center top , rgb(73, 73, 73) 0%, rgb(94, 94, 94) 50%, rgb(94, 94, 94) 100%) repeat scroll 0% 0%; }
+.toolbar .header-menu .quick-search-box i { margin: 2px; display: block; float: left; width: 16px; height: 16px; background: transparent url('search-glass.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/search-glass.png*/ no-repeat scroll 0% 0%; position: relative; z-index: 10; }
+.toolbar .header-menu .quick-search-box input { margin-top: 3px ! important; width: 57px; }
+.logo { position: relative; height: 100px; padding-top: 40px; }
+.logo__gt16 { position: absolute; background: transparent url('16_ico.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/16_ico.png*/ no-repeat scroll 0px 0px; width: 43px; height: 37px; top: 75%; left: 0px; }
+.logo__button { left: 50%; top: 30px; display: block; position: absolute; cursor: pointer; height: 100px; }
+.logo__button_main { margin-left: -183px; width: 284px; top: 33px; }
+.logo__player { position: relative; float: right; text-align: left; width: 210px; height: 52px; margin-right: 11px; background: transparent url('sidebar.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/sidebar.png*/ repeat-x scroll 0px -82px; padding: 10px 0px 20px; }
+.logo__player a { color: rgb(115, 195, 1); font-weight: bold; display: block; margin-bottom: 5px; }
+.logo__player img { position: relative; top: 1px; }
+.logo__player .left-corner, .logo__player .right-corner { position: absolute; width: 11px; height: 82px; font-size: 0px; overflow: hidden; top: 0px; }
+.logo__player .left-corner { margin-left: -11px; left: 0px; background: transparent url('sidebar.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/sidebar.png*/ no-repeat scroll 0% 0%; }
+.logo__player .right-corner { right: 0px; margin-right: -11px; background: transparent url('sidebar.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/sidebar.png*/ no-repeat scroll 0px -164px; }
+.logo__player .item { width: 100%; margin-bottom: 2px; overflow-x: hidden; }
+.logo__player .rss a { float: left; margin-right: 10px; }
+.logo__player .social { position: relative; overflow: hidden; }
+.bottom-pad { height: 240px ! important; }
+.menu { clear: both; padding-bottom: 10px; }
+.right-column { width: 240px; }
+.left-column {  }
+.top-slice {  }
+.no-script { height: 40px; width: 100%; background: rgb(86, 84, 131) none repeat scroll 0% 0%; }
+.no-script center { height: 100%; }
+.no-cont { height: 100%; width: 96%; max-width: 1300px; }
+.no-cont table { width: 100%; height: 100%; }
+.no-cont table td { color: rgb(255, 255, 255); vertical-align: middle; }
+.no-cont table td a { text-decoration: none; color: rgb(255, 255, 255); }
+.no-cont table td a.border { text-decoration: underline; }
+.no-cont table td.right { text-align: right; }
+.no-cont table td.word { width: 350px; }
+.no-cont table td .flash { position: relative; }
+.no-flash { display: none; }
+.center-subcontent { width: 100%; }
+.percent-pad { width: 98.5%; }
+.imgBox { position: relative; display: block; overflow: hidden; }
+.imgBox img { display: block; }
+.imgBox div { position: absolute; top: 0px; left: 0px; background: transparent none no-repeat scroll left top; height: 100%; width: 100%; }
+.todayBox { padding-bottom: 5px; }
+.todayBox div { text-align: center; font-weight: bold; }
+.todayBox a { margin-top: 3px; }
+.whiteStrL { float: left; width: 29px; height: 7px; background: transparent url('top-panel-arrows.gif')/*tpa=http://blogistars.com/ds/lc/afrikantova/top-panel-arrows.gif*/ no-repeat scroll 0px 0px; margin-left: 14px; display: block; }
+.whiteStrR { float: right; width: 29px; height: 7px; background: transparent url('top-panel-arrows.gif')/*tpa=http://blogistars.com/ds/lc/afrikantova/top-panel-arrows.gif*/ no-repeat scroll -29px 0px; margin-right: 15px; display: block; }
+.selectDay { clear: both; background: rgb(163, 163, 184) none repeat scroll 0% 0%; height: 28px; width: 100%; }
+.selectDay td { padding: 0px 0px 0px 5px; vertical-align: middle; }
+.calendar-panel .selectDay td { padding-left: 0px; }
+.month-select { margin-left: 4px; font-size: 11px; padding: 1px 0px; display: none; }
+.calendar_year { display: inline; font-size: 11px; padding: 1px 0px; }
+.calendarTable { padding-left: 9px; background: transparent url('calbg.gif')/*tpa=http://blogistars.com/ds/lc/afrikantova/calbg.gif*/ no-repeat scroll 9px 19px; position: relative; padding-top: 1px; }
+.calendarTable { height: 159px; }
+.calendarTable th { padding: 3px 0px; color: rgb(102, 102, 102); font-weight: normal; width: 30px; }
+.calendarTable td { color: rgb(125, 161, 8); height: 23px; line-height: 11px; }
+.calendarTable .down td, .calendarTable .predown td { height: 24px; }
+.calendarTable td a, .calendarTable td span { display: block; padding: 3px 0px 5px; color: rgb(0, 0, 0); text-align: center; margin-top: 2px; }
+.calendarTable td a.other { color: rgb(102, 102, 102); }
+.calendarTable td span { color: rgb(125, 161, 8); }
+.calendarTable td.active { font-weight: bold; }
+.calendarTable td b { color: rgb(0, 0, 0); }
+.calendarTable td.active span, .calendarTable td.active a { background: rgb(223, 245, 137) none repeat scroll 0% 0%; }
+.calendarTable .down span, .calendarTable .down a { padding-bottom: 6px; }
+.calendarTable .predown span, .calendarTable .predown a { padding-bottom: 6px; }
+.calendarTable .r1 { width: 33px; }
+.calendarTable .r1 span, .calendarTable .r1 a { margin-right: 2px; margin-left: 1px; }
+.calendarTable .r2 { width: 30px; }
+.calendarTable .r2 span, .calendarTable .r2 a { margin-right: 2px; }
+.calendarTable .r3 { width: 30px; }
+.calendarTable .r3 span, .calendarTable .r3 a { margin-right: 2px; }
+.calendarTable .r4 { width: 30px; }
+.calendarTable .r4 span, .calendarTable .r4 a { margin-right: 2px; }
+.calendarTable .r5 { width: 30px; }
+.calendarTable .r5 span, .calendarTable .r5 a { margin-right: 2px; }
+.calendarTable .r6 { width: 30px; }
+.calendarTable .r6 span, .calendarTable .r6 a { margin-right: 2px; }
+.calendarTable .r7 { width: 34px; }
+.calendarTable .r7 span, .calendarTable .r7 a { margin-right: 3px; }
+.calendarTable td.r7 span, .calendarTable td.r7 a { margin-right: 1px; }
+.selectDaysDate { padding: 4px 0px 0px 15px; }
+.selectDaysDate a.sel { text-decoration: none; color: rgb(0, 0, 0); font-weight: bold; cursor: text; }
+.selectDaysDate span { color: rgb(102, 102, 102); font-weight: bold; }
+.calendarTable .down td { padding-bottom: 1px; }
+.calendarTable div { position: absolute; width: 7px; height: 7px; }
+.calendarTable div.lt { background: transparent url('lt.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lt.png*/ no-repeat scroll 0% 0%; top: 19px; left: 9px; }
+.calendarTable div.rt { background: transparent url('rt.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rt.png*/ no-repeat scroll 0% 0%; top: 19px; left: 219px; }
+.calendarTable div.lb { background: transparent url('lb.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lb.png*/ no-repeat scroll 0% 0%; top: 153px; left: 9px; }
+.calendarTable div.rb { background: transparent url('rb.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rb.png*/ no-repeat scroll 0% 0%; top: 153px; left: 219px; }
+input.text, textarea { border: 1px solid rgb(127, 157, 185); height: 20px; width: 100%; }
+textarea { height: 200px; overflow: auto; }
+.menuBox { padding-top: 15px; margin-left: -4px; }
+.menuBox .item { margin: 0px 22px; position: relative; height: 30px; line-height: 30px; font-size: 17px; cursor: pointer; text-decoration: none; display: block; float: left; }
+.menuBox .item .left-corner, .menuBox .item .right-corner { position: absolute; width: 18px; height: 30px; font-size: 0px; overflow: hidden; top: 0px; }
+.menuBox .item .left-corner { margin-left: -18px; left: 0px; }
+.menuBox .item .right-corner { right: 0px; margin-right: -18px; }
+.menuBox .no-select { background: transparent url('menu.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/menu.png*/ repeat-x scroll 0px -30px; }
+.menuBox .no-select .left-corner { background: transparent url('menu.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/menu.png*/ no-repeat scroll 0% 0%; }
+.menuBox .no-select .right-corner { background: transparent url('menu.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/menu.png*/ no-repeat scroll 0px -60px; }
+.menuBox .item:hover, .menuBox .select { background: transparent url('menu2.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/menu2.png*/ repeat-x scroll 0px -30px; color: rgb(255, 255, 255); }
+.menuBox .item:hover .left-corner, .menuBox .select .left-corner { background: transparent url('menu2.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/menu2.png*/ no-repeat scroll 0% 0%; }
+.menuBox .item:hover .right-corner, .menuBox .select .right-corner { background: transparent url('menu2.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/menu2.png*/ no-repeat scroll 0px -60px; }
+.menuBox .item:hover .gt16.menu, .menuBox .select .gt16.menu { opacity: 1; }
+.subMenu { position: relative; height: 18px; background: transparent url('submenu.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/submenu.png*/ repeat-x scroll 0px -52px; margin: 5px 0px 5px 13px; padding: 4px 0px; font-size: 13px; font-weight: bold; float: left; }
+.subMenu .item { position: relative; float: left; padding: 0px 6px; font-size: 14px; font-weight: bold; font-family: arial,sans-serif; }
+.subMenu .item a { color: rgb(204, 204, 204); }
+.subMenu .item a span { color: rgb(1, 136, 203); }
+.subMenu .item a.select span { color: rgb(0, 0, 0); }
+.subMenu .left-corner, .subMenu .right-corner { position: absolute; width: 13px; height: 26px; font-size: 0px; overflow: hidden; top: 0px; }
+.subMenu .left-corner { margin-left: -13px; left: 0px; background: transparent url('submenu.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/submenu.png*/ no-repeat scroll 0% 0%; }
+.subMenu .right-corner { right: 0px; margin-right: -13px; background: transparent url('submenu.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/submenu.png*/ no-repeat scroll 0px -26px; }
+.comment-form .buttons td, .form-buttons td { vertical-align: middle; padding-right: 10px; }
+.form-buttons td.first { padding-left: 60px; }
+.white-block { width: 100%; margin-bottom: 10px; }
+.white-block .t .l, .white-block .t .r, .white-block .b .l, .white-block .b .r { width: 10px; height: 10px; line-height: 0; font-size: 0px; }
+.white-block .t .l { background: transparent url('lt_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lt_001.png*/ no-repeat scroll 0% 0%; }
+.white-block .t .r { background: transparent url('rt_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rt_001.png*/ no-repeat scroll 0% 0%; }
+.white-block .b .l { background: transparent url('lb_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lb_001.png*/ no-repeat scroll 0% 0%; }
+.white-block .b .r { background: transparent url('rb_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rb_001.png*/ no-repeat scroll 0% 0%; }
+.white-block .t .m, .white-block .b .m { height: 10px; line-height: 0; font-size: 0px; }
+.white-block .t .m { background: rgb(255, 255, 255) url('border.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border.png*/ repeat-x scroll left top; }
+.white-block .b .m { background: rgb(255, 255, 255) url('border.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border.png*/ repeat-x scroll left bottom; }
+.white-block .c .l, .white-block .c .r { width: 10px; line-height: 0; font-size: 0px; }
+.white-block .c .l { background: rgb(255, 255, 255) url('border.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border.png*/ repeat-y scroll left top; }
+.white-block .c .r { background: rgb(255, 255, 255) url('border.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border.png*/ repeat-y scroll right top; }
+.white-block .c .m { background: rgb(255, 255, 255) none repeat scroll 0% 0%; }
+.white-block .c .m h2 { margin: 0px; padding-bottom: 5px; }
+.calendar-panel { height: 250px; display: none; position: absolute; z-index: 100000; }
+.calendar-panel .cl, .calendar-panel .cr { width: 10px; height: 10px; line-height: 0px; font-size: 0px; }
+.calendar-panel .cs, .calendar-panel .cs div { width: 10px; line-height: 0px; font-size: 0px; background-color: rgb(193, 193, 210); }
+.calendar-panel .cs div { height: 28px; background: rgb(163, 163, 184) none repeat scroll 0% 0%; margin-top: 18px; }
+.calendar-panel .cm { height: 10px; line-height: 0px; font-size: 0px; background-color: rgb(193, 193, 210); }
+.calendar-center { background: rgb(193, 193, 210) none repeat scroll 0% 0%; }
+.calendar-top .cl { background: transparent url('tl.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/tl.png*/ no-repeat scroll left top; }
+.calendar-top .cr { background: transparent url('tr.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/tr.png*/ no-repeat scroll left top; }
+.calendar-bottom .cl { background: transparent url('bl.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/bl.png*/ no-repeat scroll left top; }
+.calendar-bottom .cr { background: transparent url('br.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/br.png*/ no-repeat scroll left top; }
+.calendar-panel .calendarTable { padding-left: 2px; background: transparent url('calbg.gif')/*tpa=http://blogistars.com/ds/lc/afrikantova/calbg.gif*/ no-repeat scroll 2px 19px; }
+.calendar-panel .calendarTable div { position: absolute; width: 7px; height: 7px; }
+.calendar-panel .calendarTable div.lt { background: transparent url('lt.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lt.png*/ no-repeat scroll 0% 0%; top: 19px; left: 2px; }
+.calendar-panel .calendarTable div.rt { background: transparent url('rt.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rt.png*/ no-repeat scroll 0% 0%; top: 19px; left: 212px; }
+.calendar-panel .calendarTable div.lb { background: transparent url('lb.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lb.png*/ no-repeat scroll 0% 0%; top: 153px; left: 2px; }
+.calendar-panel .calendarTable div.rb { background: transparent url('rb.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rb.png*/ no-repeat scroll 0% 0%; top: 153px; left: 212px; }
+.calendar-panel .selectDaysDate { padding: 4px 0px 0px 3px; }
+img.light-horo { background: transparent url('horo-light.gif')/*tpa=http://blogistars.com/ds/lc/afrikantova/horo-light.gif*/ no-repeat scroll left top; }
+img.LIBRA { background-position: -120px top; }
+.block { margin-bottom: 10px; }
+h2 a, h1 a, h3 a { color: rgb(0, 0, 0); }
+.content-text { font-size: 12px; }
+.content-text h1, .content-text h2, .content-text h3, .content-text h4 { font-weight: normal; margin: 0px; padding: 10px 0px 0px; }
+.content-text h1 a, .content-text h2 a, .content-text h3 a, .content-text h4 a { color: rgb(0, 0, 0); }
+.content-text h1 { font-size: 18px; }
+.content-text p { margin: 10px 0; padding: 0px 0px 10px; font-size: 14px; }
+.dashed { border-bottom-style: dashed; border-width: 1px; text-decoration: none; }
+.complain-panel { position: absolute; z-index: 100; display: none; }
+.popup_dialog { position: absolute; z-index: 100; display: none; }
+.comments-main-panel2 { display: none; }
+.comments-main-panel2 table.border { width: 100%; clear: both; }
+.comments-main-panel2 .t .l, .comments-main-panel2 .t .r, .comments-main-panel2 .b .l, .comments-main-panel2 .b .r, .comments-main-panel2 .ct .cl, .comments-main-panel2 .ct .cr, .comments-main-panel2 .cb .cl, .comments-main-panel2 .cb .cr { width: 10px; height: 10px; line-height: 0; }
+.comments-main-panel2 .t .m, .comments-main-panel2 .b .m, .comments-main-panel2 .c .l, .comments-main-panel2 .c .r, .comments-main-panel2 .ct .cm, .comments-main-panel2 .cb .cm, .comments-main-panel2 .cc .cl, .comments-main-panel2 .cc .cr { line-height: 0; }
+.comments-main-panel2 .t .l, .comments-main-panel2 .ct .cl { background: transparent url('lt_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lt_002.png*/ no-repeat scroll left top; }
+.comments-main-panel2 .t .r, .comments-main-panel2 .ct .cr { background: transparent url('rt_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rt_002.png*/ no-repeat scroll left top; }
+.comments-main-panel2 .b .l, .comments-main-panel2 .cb .cl { background: transparent url('lb_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lb_002.png*/ no-repeat scroll left top; }
+.comments-main-panel2 .b .r, .comments-main-panel2 .cb .cr { background: transparent url('rb_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rb_002.png*/ no-repeat scroll left top; }
+.comments-main-panel2 .t .m, .comments-main-panel2 .ct .cm { background: rgb(208, 232, 240) url('border_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_001.png*/ repeat-x scroll left top; }
+.comments-main-panel2 .b .m, .comments-main-panel2 .cb .cm { background: rgb(208, 232, 240) url('border_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_001.png*/ repeat-x scroll left bottom; }
+.comments-main-panel2 .c .l, .comments-main-panel2 .c .r, .comments-main-panel2 .cc .cl, .comments-main-panel2 .cc .cr { width: 10px; }
+.comments-main-panel2 .c .l, .comments-main-panel2 .cc .cl { background: rgb(208, 232, 240) url('border_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_001.png*/ repeat-y scroll left top; }
+.comments-main-panel2 .c .r, .comments-main-panel2 .cc .cr { background: rgb(208, 232, 240) url('border_001.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_001.png*/ repeat-y scroll right top; }
+.comments-main-panel2 .cccc { background: rgb(208, 232, 240) none repeat scroll 0% 0%; }
+.comments-main-panel2 .field { width: 45px; }
+.comments-main-panel2 .errorMessage { height: 10px; line-height: 9px; font-size: 9px; }
+.comments-main-panel2 .errorMessage { color: rgb(138, 61, 177); }
+.loading { margin: 4px 0px 0px 10px; display: none; }
+.rank0, .rank1, .rank2, .rank3, .rank4, .rank5, .rank6, .rank7, .rank8, .rank9, .rankhero { position: relative; top: 2px; }
+.rankhero { position: relative; top: 2px; }
+.rankhero { background: transparent url('rankhero.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rankhero.png*/ no-repeat scroll 0px 0px; }
+#screen { position: absolute; z-index: 10000; width: 100%; height: 100%; top: 0px; left: 0px; display: none; }
+.counters { visibility: hidden; position: absolute; top: -1000px; }
+.index-video-blocks { width: 100%; margin-bottom: 13px; }
+.index-video-blocks td.col { width: 33%; padding-left: 13px; height: 50px; }
+.index-video-blocks .block { margin: 0px; }
+.index-video-blocks .item { font-size: 12px; }
+.index-video-blocks div.item { padding-bottom: 10px; }
+.index-video-blocks h1 { padding-top: 0px; padding-bottom: 10px; }
+.index-video-blocks table { height: 100%; }
+.index-video-blocks a.user { color: rgb(0, 0, 0); font-size: 11px; }
+.index-video-blocks img.rankhero { margin-right: 2px; }
+.index-video-blocks .imgBox { float: left; margin-right: 10px; width: 110px; height: 65px; }
+.index-video-blocks .imgBox div { background-image: url('index-video-frame.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/index-video-frame.png*/; }
+.text-insert .t .l, .buble .t .r, .buble .b .l, .buble .b .r { width: 10px; height: 10px; line-height: 0px; }
+.buble td.m { font-size: 0px; }
+.solr { position: relative; }
+.solr .solr-complete-list { background-color: rgb(255, 255, 255); position: absolute; width: 384px; margin-top: 3px; top: 100%; right: -3px; border-width: medium 1px 1px; border-style: none solid solid; border-color: -moz-use-text-color rgb(229, 229, 229) rgb(229, 229, 229); -moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; border-image: none; border-radius: 0px 0px 2px 2px; overflow-x: hidden; overflow-y: scroll; height: 210px; display: none; box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.3); }
+i.gt16 { display: block; position: absolute; }
+i.gt16.small { width: 19px; height: 17px; background: transparent url('16_ico.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/16_ico.png*/ no-repeat scroll -43px -20px; }
+i.gt16.small.menu { display: block; opacity: 0; z-index: 500; }
+.b-bigPanel { margin-top: 10px; border-left: 1px solid rgb(191, 191, 210); border-right: 1px solid rgb(191, 191, 210); background: rgb(255, 255, 255) url('bg.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/bg.png*/ repeat-x scroll 0% 0%; position: relative; width: 100%; }
+.b-bigPanel h2 { margin-top: 0px; }
+.b-bigPanel__corner { position: absolute; height: 10px; }
+.b-bigPanel_lTop { margin-top: -10px; background: transparent url('top.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/top.png*/ no-repeat scroll 0px 0px; left: -1px; right: 9px; }
+.b-bigPanel_rTop { margin-top: -10px; width: 10px; background: transparent url('top.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/top.png*/ no-repeat scroll 0px -10px; right: -1px; }
+.b-bigPanel_lBottom { margin-bottom: -10px; bottom: 0px; background: transparent url('bottom.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/bottom.png*/ no-repeat scroll 0px 0px; left: -1px; right: 9px; }
+.b-bigPanel_rBottom { margin-bottom: -10px; bottom: 0px; width: 10px; background: transparent url('bottom.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/bottom.png*/ no-repeat scroll 0px -10px; right: -1px; }
+.b-bigPanel__content { padding: 0px 10px; }
+
+
+.controller-times tr:nth-child(2n+1) td { background: rgb(238, 238, 238) none repeat scroll 0% 0%; }
+
+
+#recaptcha_captcha_label.invalid, #recaptcha_captcha_label_wrong { color: rgb(138, 61, 177); }
+#recaptcha_captcha_label.invalid, #recaptcha_captcha_label, #recaptcha_captcha_label_wrong { font-size: 12px; }
+
+
+.menuBox .item { outline: medium none; }
+ul { margin: 0px; padding: 0px; list-style: outside none none; }
+.relative { position: relative; }
+.other-materials { padding-top: 30px; }
+.other-materials table { width: 100%; }
+.other-materials h2 { color: rgb(0, 0, 0); margin: 0px 0px 10px; }
+.other-materials h2 a { color: rgb(0, 0, 0); }
+.other-materials table td { width: 50%; color: rgb(102, 102, 102); font-size: 11px; }
+.other-materials ul { list-style-type: none; padding: 0px; margin: 0px; }
+.other-materials li { padding-bottom: 6px; }
+.other-materials a { margin-right: 4px; }
+.buble { width: 240px; padding: 10px 0px 0px; float: left; }
+.buble table { width: 100%; }
+.buble .t .l, .buble .t .r, .buble .b .l, .buble .b .r { width: 10px; height: 10px; line-height: 0px; }
+.buble .t .l { background: transparent url('lt_003.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lt_003.png*/ no-repeat scroll left top; }
+.buble .t .r { background: transparent url('rt_003.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rt_003.png*/ no-repeat scroll left top; }
+.buble .b .l { background: transparent url('lb_003.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/lb_003.png*/ no-repeat scroll left top; }
+.buble .b .r { background: transparent url('rb_003.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/rb_003.png*/ no-repeat scroll left top; }
+.buble .t .m { background: rgb(214, 214, 233) url('border_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_002.png*/ repeat-x scroll left top; }
+.buble .b .m { background: rgb(214, 214, 233) url('border_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_002.png*/ repeat-x scroll left bottom; }
+.buble .m .l { background: rgb(214, 214, 233) url('border_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_002.png*/ repeat-y scroll left top; }
+.buble .m .r { background: rgb(214, 214, 233) url('border_002.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/border_002.png*/ repeat-y scroll right top; }
+.buble .m .c { font-size: 14px; background-color: rgb(214, 214, 233); }
+.buble td { vertical-align: top; font-size: 12px; }
+.buble p.date { color: rgb(0, 0, 0); font-size: 10px; }
+.buble .a td { padding-bottom: 10px; }
+.buble .a .left { padding-right: 12px; color: rgb(102, 102, 102); font-size: 10px; }
+.buble .a .right { width: 142px; vertical-align: middle; }
+.buble .relative span { position: relative; top: -6px; }
+.buble .relative img { position: relative; top: 4px; left: 4px; }
+.buble-black .t .l, .buble .t .r, .buble .b .l, .buble .b .r { width: 10px; height: 10px; line-height: 0px; }
+.heroe div.caption { padding-bottom: 16px; }
+.heroe div.caption h2 { display: inline; font-weight: normal; }
+.heroe div.caption img { position: relative; top: 2px; }
+.heroe div.caption span { padding-left: 20px; }
+.heroe div.caption span a { font-size: 14px; }
+.heroe .foto { float: left; padding-right: 10px; }
+.heroe .imgBox { width: 240px; height: 215px; }
+.heroe .imgBox div { background-image: url('imgbgday.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/imgbgday.png*/; }
+#heroe-about h2 { padding-bottom: 8px; }
+#heroe-about td { padding-bottom: 10px; }
+#heroe-about .text a { margin-right: 4px; }
+#heroe-about .text { color: rgb(102, 102, 102); }
+#photosList { clear: both; }
+.right-column .clear { height: 10px; }
+#photosList div.items { width: 249px; }
+#photosList div.items a { float: left; position: relative; display: block; width: 121px; height: 89px; overflow: hidden; margin: 0px 2px 2px 0px; }
+#photosList div.items a div { position: absolute; left: 0px; top: 0px; z-index: 2; width: 121px; height: 89px; background: transparent url('imgbord121.png')/*tpa=http://blogistars.com/ds/lc/afrikantova/imgbord121.png*/ no-repeat scroll 0% 0%; }
+.right-column .clear { height: 10px; }
+.letter .comments-main-panel2 { display: block; }
+.fb_reset { background: transparent none repeat scroll 0% 0%; border: 0px none; border-spacing: 0px; color: rgb(0, 0, 0); cursor: auto; direction: ltr; font-family: "lucida grande",tahoma,verdana,arial,sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 1; margin: 0px; overflow: visible; padding: 0px; text-align: left; text-decoration: none; text-indent: 0px; text-shadow: none; text-transform: none; visibility: visible; white-space: normal; word-spacing: normal; }
+.fb_reset > div { overflow: hidden; }
+.fb_iframe_widget { display: inline-block; position: relative; }
+.fb_iframe_widget span { display: inline-block; position: relative; text-align: justify; }
+.fb_iframe_widget iframe { position: absolute; }
+#recaptcha_captcha { margin-top: 5px; margin-bottom: 10px; }
+
+.b-bigPanel__content .content-text { width: 760px; float:right;}
+.imfoto {
+	border-radius: 5px;
+	cursor:pointer;
+	}
+
+.telo-okna {
+		  display:block;
+        background: no-repeat #FFF url('close.gif')/*tpa=http://blogistars.com/ds/lc/afrikantova/close.gif*/ right top ;
+        box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+        border-radius: 6px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        position: relative;
+        overflow-y: auto;
+        padding: 35px 15px 15px 15px;
+	margin: 0 auto;
+	cursor:pointer;
+	z-index:1070;
+      }
+
+#okno { position:relative; }
+
+#imtab { width: 800px; height: 100%; z-index:1000; position:absolute; top:25%; left:0; cursor: pointer; }
+#imtab #imtd1 { width: 50%; height: 200px; vertical-align:middle; text-align:left;  }
+#imtab #imtd2 { width: 50%; height: 200px; vertical-align:middle; text-align: right;  }
+.roditelskoe_okno { z-index:900; }
+.red { color:#F00; }
+.silver { color:#666; }
+.content-text .h2top { font-size: 28px; margin:0; padding: 0 0 40px 0; }
+
+
+.b-bigPanel__content .content-text img {   height: auto; max-width: 100%; width: auto; }
+
+#comment-add img, #paging_container img { height: auto; max-width: 100%; width: auto; }
+
+#comment-add, #paging_container { width: 600px; margin: 0 auto; }
+#comment-add, #paging_container  {   width: 600px; }
+
+
+@media screen and (max-width: 1400px) { 
+body  { width: 100%; max-width: 100%; min-width: 320px;}
+.toolbar-wrapper {  min-width: 960px; width: 960px; }
+#comment-add, #paging_container  {   width: 600px; }
+.no-cont { max-width: 960px; }
+.max-width { max-width: 960px; width: 960px;}
+table.center-content .right-column { min-width: 240px; max-width: 240px; width: 240px;  }
+.bottom-pad { }
+.heroe .foto {}
+.menuBox .sel-8, .menuBox .sel-9, .menuBox .sel-10, .menuBox .sel-11 { display:none; }
+.b-bigPanel__content .content-text { width: 430px; float:right;}
+.content-text .h2top { font-size: 22px; margin:0; padding: 0 0 20px 0; }
+ }
+
+@media screen and (max-width: 959px) { 
+body, html  { width: 100%; max-width: none; min-width: 320px;}
+.toolbar-wrapper {   width: 800px; max-width: 800px; min-width: 800px; overflow:hidden; }
+#comment-add, #paging_container  {   width: 500px; }
+.b-comment .b-comment__message { width: 420px; }
+.b-comments-list__item2 .b-comment .b-comment__message { width: 360px; }
+.no-cont { max-width: 800px; }
+.max-width { max-width: 800px; width: 800px; overflow:hidden; }
+.right-column {}
+.bottom-pad { height: 170px !important; }
+.heroe .foto { display:none; }
+.bottom-bg {
+    background: transparent url("botvector6-1000.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/botvector6-1000.jpg*/ no-repeat scroll center bottom;
+}
+.middle {
+    background: transparent url("topvector6-1000.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/topvector6-1000.jpg*/ no-repeat scroll center -10px;
+}
+.logo  {padding-top: 0; }
+.menuBox .sel-7, .menuBox .sel-8, .menuBox .sel-9, .menuBox .sel-10, .menuBox .sel-11 { display:none; }
+#loginForm { display:none; }
+.toolbar .header-menu .quick-search-box { width: 200px; }
+.b-bigPanel__content .content-text { width: 520px; float: none;}
+}
+
+@media screen and (max-width: 799px) { 
+body, html  { width: 100%; max-width: none; min-width: 320px;}
+.toolbar-wrapper {   width: 640px; max-width: 640px; min-width: 640px; overflow:hidden; }
+#comment-add, #paging_container  {   width: 580px; }
+.no-cont { max-width: 640px; }
+.max-width { max-width: 640px; width: 640px; overflow:hidden; }
+.b-comment .b-comment__message { width: 460px; }
+.b-comments-list__item2 .b-comment .b-comment__message { width: 390px; }
+.right-column { display:none; }
+.bottom-pad { height: 170px !important; }
+.heroe .foto {}
+.bottom-bg {
+    background: transparent url("botvector6-800.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/botvector6-800.jpg*/ no-repeat scroll center bottom;
+}
+.middle {
+    background: transparent url("topvector6-800.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/topvector6-800.jpg*/ no-repeat scroll center -53px;
+}
+.logo  {padding-top: 0; }
+.menuBox .sel-6, .menuBox .sel-7, .menuBox .sel-8, .menuBox .sel-9, .menuBox .sel-10, .menuBox .sel-11 { display:none; }
+#loginForm { display:none; }
+.toolbar .header-menu .quick-search-box { width: 80px; margin-left: 100px; }
+.toolbar .header-nav { background:none; }
+.b-bigPanel__content .content-text { width: 600px; float: none;}
+}
+
+@media screen and (max-width: 639px) { 
+body, html  { width: 100%; max-width: none; min-width: 320px;}
+.toolbar-wrapper {  display:none; }
+#comment-add, #paging_container  {   width: 430px; }
+.no-cont { max-width: 480px; }
+.b-comment .b-comment__message { width: 350px; }
+.b-comments-list__item2 .b-comment .b-comment__message { width: 280px; }
+.max-width { max-width: 480px; width: 480px; overflow:hidden; }
+.right-column { display:none; }
+.bottom-pad { height: 170px !important; }
+.heroe .foto { display:none; }
+.bottom-bg {
+    background: transparent url("botvector6-640.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/botvector6-640.jpg*/ no-repeat scroll center bottom;
+}
+.middle {
+    background: transparent url("topvector6-640.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/topvector6-640.jpg*/ no-repeat scroll center top;
+}
+.logo  {padding-top: 0; }
+.menuBox .sel-1, .menuBox .sel-6, .menuBox .sel-7, .menuBox .sel-8, .menuBox .sel-9, .menuBox .sel-10, .menuBox .sel-11 { display:none; }
+#loginForm { display:none; }
+.toolbar .header-menu .quick-search-box { width: 80px; margin-left: 100px; }
+.toolbar .header-nav { background:none; }
+.logo__player { width: 150px; }
+.b-bigPanel__content .content-text { width: 440px; float: none;}
+}
+
+@media screen and (max-width: 479px) { 
+body, html  { width: 100%; max-width: none; min-width: 320px;}
+.toolbar-wrapper {  display:none; }
+#comment-add, #paging_container  {   width: 280px; }
+.no-cont { max-width: 320px; }
+.b-comment .b-comment__message { width: 200px; }
+.b-comments-list__item2 .b-comment .b-comment__message { width: 160px; }
+.max-width { max-width: 320px; overflow:hidden; }
+.right-column { display:none; }
+.bottom-pad { height: 170px !important; }
+.heroe .foto { display:none; }
+.bottom-bg {
+    background: transparent url("botvector6-640.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/botvector6-640.jpg*/ no-repeat scroll center bottom;
+}
+.middle {
+    background: transparent url("topvector6-640.jpg")/*tpa=http://blogistars.com/ds/lc/afrikantova/topvector6-640.jpg*/ no-repeat scroll -230px top;
+}
+.logo  {padding-top: 0; }
+.menuBox .sel-5, .menuBox .sel-1, .menuBox .sel-6, .menuBox .sel-7, .menuBox .sel-8, .menuBox .sel-9, .menuBox .sel-10, .menuBox .sel-11 { display:none; }
+#loginForm { display:none; }
+.toolbar .header-menu .quick-search-box { width: 80px; margin-left: 100px; }
+.toolbar .header-nav { background:none; }
+.logo__player { width: 150px; }
+.b-bigPanel__content .content-text { width: 290px; float: none;}
+.content-text .h2top { font-size: 20px; margin:0; padding: 0 0 15px 0; }
+h2 { font-size: 14px; }
+.heroe div.caption span a { font: 11px Tahoma;  }
+.content-text p { font: 12px Tahoma;  }
+.content-text img {  width: 290px; height: auto; max-width: 100%;  }
+}
+
+#paging_container
+
+
+
+
+
+
+
+
+.b-section_title-type_medium-simple .b-section__head {
+    border-bottom: 1px solid rgb(234, 234, 234);
+    margin: 0 0 15px;
+    padding: 0 0 2px;
+}
+.b-section_title-type_medium-simple .b-section__title {
+    color: rgb(51, 51, 51);
+    font: 0px/0 null,a;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: left;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.b-section_title-type_medium-simple .b-section__title > .b-section__text {
+    display: inline-block;
+    font: 700 14px/1.2857 Ubuntu,Arial,Helvetica,sans-serif;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    white-space: normal;
+}
+.b-section_title-type_medium-simple > a.b-section__text::after, .b-section_title-type_medium-simple > a.b-section__text > .b-after {
+    display: none;
+}
+.b-section_title-type_medium-centered .b-section__title > a.b-section__text::after, .b-section_title-type_medium-centered .b-section__title > a.b-section__text > .b-after {
+    display: none;
+}
+.b-section_title-type_medium-centered-red .b-section__title > a.b-section__text::after, .b-section_title-type_medium-centered-red .b-section__title > a.b-section__text > .b-after {
+    display: none;
+}
+.b-section_title-type_medium-hot .b-section__title::after, .b-section_title-type_medium-hot .b-section__title > .b-after {
+    background: rgb(253, 197, 197) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    font: 0px/0 null,a;
+    height: 1px;
+    position: absolute;
+    width: 100%;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head {
+    margin: 0 0 12px;
+    padding: 0;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head .b-section__title {
+    color: rgb(51, 51, 51);
+    font: 0px/0 null,a;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > .b-after, .b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > .b-before, .b-section_title-type_big > .b-section__in > .b-section__head .b-section__title::after, .b-section_title-type_big > .b-section__in > .b-section__head .b-section__title::before {
+    background: transparent url("b-section__title-type_big.png")/*tpa=http://blogistars.com/ds/lc/afrikantova/b-section__title-type_big.png*/ repeat fixed 0 0 padding-box content-box;
+    content: "";
+    display: inline-block;
+    height: 9px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > .b-before, .b-section_title-type_big > .b-section__in > .b-section__head .b-section__title::before {
+    left: -11px;
+    margin: 0 0 0 -50%;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > .b-after, .b-section_title-type_big > .b-section__in > .b-section__head .b-section__title::after {
+    left: 11px;
+    margin: 0 -50% 0 0;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > .b-section__text {
+    display: inline-block;
+    font: 700 20px/1.2 Ubuntu,Arial,Helvetica,sans-serif;
+    max-width: 80%;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    white-space: normal;
+}
+.b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > a.b-section__text::after, .b-section_title-type_big > .b-section__in > .b-section__head .b-section__title > a.b-section__text > .b-after {
+    display: none;
+}
+.b-section_title-type_big-simple > a.b-section__text::after, .b-section_title-type_big-simple > a.b-section__text > .b-after {
+    display: none;
+}
+.b-section_title-type_border .b-section__title > .b-after, .b-section_title-type_border .b-section__title::after {
+    background: rgb(236, 19, 19) none repeat scroll 0 0 padding-box content-box;
+    bottom: -1px;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.b-section_type_border {
+    overflow: hidden;
+}
+.b-section_type_border .b-section__head {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.b-section_type_border .b-section__head > .b-after, .b-section_type_border .b-section__head > .b-before, .b-section_type_border .b-section__head::after, .b-section_type_border .b-section__head::before {
+    background: rgb(193, 193, 193) none repeat scroll 0 0;
+    bottom: 0;
+    content: "";
+    font: 0px/0 null,a;
+    position: absolute;
+    top: 50%;
+    width: 1px;
+}
+.b-section_type_border .b-section__head > .b-before, .b-section_type_border .b-section__head::before {
+    left: 0;
+}
+.b-section_type_border .b-section__head > .b-after, .b-section_type_border .b-section__head::after {
+    right: 0;
+}
+.b-section_type_border .b-section__body {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: rgb(193, 193, 193);
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 10px 9px 12px;
+}
+.b-section_type_border.b-section_title-type_small .b-section__head {
+    margin: 0;
+}
+.b-section_type_border.b-section_title-type_small .b-section__title > .b-after, .b-section_type_border.b-section_title-type_small .b-section__title > .b-before, .b-section_type_border.b-section_title-type_small .b-section__title::after, .b-section_type_border.b-section_title-type_small .b-section__title::before {
+    background: rgb(193, 193, 193) none repeat scroll 0 0 padding-box content-box;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.b-section_type_border.b-section_title-type_small .b-section__title > .b-before, .b-section_type_border.b-section_title-type_small .b-section__title::before {
+    left: -8px;
+    margin: 0 0 0 -50%;
+}
+.b-section_type_border.b-section_title-type_small .b-section__title > .b-after, .b-section_type_border.b-section_title-type_small .b-section__title::after {
+    left: 8px;
+    margin: 0 -50% 0 0;
+}
+.b-section_type_border.b-section_title-type_small .b-section__title > a.b-section__text::after, .b-section_type_border.b-section_title-type_small .b-section__title > a.b-section__text > .b-after {
+    display: none;
+}
+
+
+
+
+.b-comment {
+    margin: 0;
+    min-height: 68px;
+    overflow: hidden;
+    padding: 0 0 0 60px;
+}
+.b-form_content_add-comment .b-comment .b-comment__message {
+    margin: 0;
+    overflow: hidden;
+}
+.b-comment .b-comment__meta {
+    display: block;
+}
+.b-comment .b-comment__message {
+    margin: 0;
+    min-height: 20px;
+    padding: 0 0 6px;
+}
+.b-comment .b-comment__voting {
+    float: right;
+    margin: 0 0 2px 2px;
+}
+.b-comment .b-avatar {
+    left: auto;
+    margin: 0 0 0 -60px;
+    position: absolute;
+    top: auto;
+    width: 50px;
+}
+.b-comment .b-comment__user {
+    color: rgb(34, 34, 34);
+    display: inline-block;
+    font: 700 13px/1.3846 Ubuntu,Arial,Helvetica,sans-serif;
+    margin: 0 7px 2px 0;
+}
+.b-comment .b-comment__date {
+    color: rgb(153, 153, 153);
+    font: 300 10px/1.3846 Ubuntu,Arial,Helvetica,sans-serif;
+    text-decoration: none;
+}
+.b-comment .b-comment__menu {
+    display: block;
+    margin: 0 0 0 -60px;
+    overflow: hidden;
+    padding: 0 0 0 60px;
+    position: static;
+    right: auto;
+    top: auto;
+    width: auto;
+}
+.b-comment .b-comment__menu .b-link {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+
+.b-menu_content_footer > .b-menu__item > a.b-menu__text:hover {
+    color: rgb(83, 83, 83);
+}
+.b-form-field {
+    border: 0 none;
+    display: block;
+    margin: 0;
+    outline: 0 none;
+    padding: 0;
+    position: relative;
+}
+.b-form-field__box {
+    background: transparent none repeat scroll 0 center;
+    border: 0 none;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 100%;
+    margin: 0;
+    outline: 0 none;
+    overflow: visible;
+    padding: 0;
+    vertical-align: top;
+    width: 100%;
+}
+.b-form-field__box:focus {
+    border: medium none;
+    outline: 0 none;
+    outline-offset: -2px;
+}
+.b-form_content_local-auth .b-form-field_type_password > .b-form-field__box::-moz-placeholder, .b-form_content_local-auth .b-form-field_type_text > .b-form-field__box::-moz-placeholder {
+    color: rgb(170, 170, 170);
+    opacity: 1;
+}
+.b-form_content_add-comment .b-form-field_type_password, .b-form_content_add-comment .b-form-field_type_text, .b-form_content_add-comment .b-form-field_type_textarea {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border: 1px solid rgb(231, 231, 231);
+    display: block;
+    font: 13px/1 "PT Sans",Ubuntu,Arial,Helvetica,sans-serif;
+    padding: 5px 9px;
+    width: auto;
+}
+.b-form_content_add-comment .b-form-field_type_password > .b-form-field__box, .b-form_content_add-comment .b-form-field_type_text > .b-form-field__box, .b-form_content_add-comment .b-form-field_type_textarea > .b-form-field__box {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    color: rgb(51, 51, 51);
+    font: 13px/1 "PT Sans",Ubuntu,Arial,Helvetica,sans-serif;
+    height: 15px;
+    text-align: left;
+    vertical-align: top;
+}
+.b-form_content_add-comment .b-form-field_type_password > .b-form-field__box:-moz-placeholder, .b-form_content_add-comment .b-form-field_type_text > .b-form-field__box:-moz-placeholder, .b-form_content_add-comment .b-form-field_type_textarea > .b-form-field__box:-moz-placeholder {
+    color: rgb(133, 133, 133);
+    opacity: 1;
+}
+.b-form_content_add-comment .b-form-field_type_password > .b-form-field__box::-moz-placeholder, .b-form_content_add-comment .b-form-field_type_text > .b-form-field__box::-moz-placeholder, .b-form_content_add-comment .b-form-field_type_textarea > .b-form-field__box::-moz-placeholder {
+    color: rgb(133, 133, 133);
+    opacity: 1;
+}
+.b-form_content_add-comment .b-form-field_type_textarea > .b-form-field__box {
+    height: 78px;
+    resize: none;
+}
+.b-form_content_add-comment .b-form-field_type_password, .b-form_content_add-comment .b-form-field_type_text {
+    margin-right: 4px;
+}
+.b-form_content_add-comment .b-form-field_type_submit {
+    float: left;
+}
+.b-form_content_add-comment .b-form-field_type_submit > .b-form-field__box {
+    background: rgb(132, 170, 216) none repeat scroll 0 0;
+    border: 1px solid rgb(231, 231, 231);
+    color: rgb(255, 255, 255);
+    font: 13px/1 "PT Sans",Ubuntu,Arial,Helvetica,sans-serif;
+    height: 27px;
+    min-width: 83px;
+    padding: 5px 9px;
+    text-align: center;
+}
+.b-form_content_add-comment .b-form-field_type_cancel {
+    float: right;
+}
+.b-form_content_add-comment .b-form-field_type_cancel > .b-form-field__box {
+    background: rgb(169, 169, 169) none repeat scroll 0 0;
+    border: 1px solid rgb(231, 231, 231);
+    color: rgb(255, 255, 255);
+    font: 13px/1 "PT Sans",Ubuntu,Arial,Helvetica,sans-serif;
+    height: 27px;
+    min-width: 83px;
+    padding: 5px 9px;
+    text-align: center;
+}
+.b-form-field_type_submit {
+    display: inline-block;
+    vertical-align: middle;
+}.b-form_content_add-comment {
+    background: rgb(242, 242, 242) none repeat scroll 0 0;
+    padding: 10px 10px 15px;
+}
+
+
+
+.b-form-group {
+    background: transparent none repeat scroll 0 center;
+    border: 0 none;
+    display: block;
+    margin: 14px auto 0;
+    padding: 0;
+}
+.b-form-group:first-child {
+    margin-top: 0;
+}
+.b-form-group__item {
+    display: block;
+    margin: 10px 0 0;
+    padding: 0;
+}
+.b-form-group__item_content_captcha {
+    white-space: nowrap;
+}
+.b-form-group__item:first-child {
+    margin-top: 0;
+}
+.b-form-group__image {
+    animation: 0.5s linear 0s normal none infinite running barberpole;
+    background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 50%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1) 75%, transparent 75%, transparent);
+    background-size: 30px 30px;
+}
+.b-form_content_add-comment .b-form-group {
+    font: 13px/1 "PT Sans",Ubuntu,Arial,Helvetica,sans-serif;
+}
+.b-form_content_add-comment .b-form-group .b-form-group__item_type_actions::after, .b-form_content_add-comment .b-form-group .b-form-group__item_type_actions::before {
+    content: "";
+    display: table;
+}
+.b-form_content_add-comment .b-form-group .b-form-group__item_type_actions::after {
+    clear: both;
+}
+.b-form-group_content_anonymously-form {
+    font: 0px/0 null,a;
+    text-align: justify;
+}
+.b-form-group_content_anonymously-form > .b-after, .b-form-group_content_anonymously-form::after {
+    content: "";
+    display: inline-block;
+    font: 0px/0 null,a;
+    height: 0;
+    vertical-align: top;
+    width: 100%;
+}
+
+.b-comments-list {
+    list-style: outside none none;
+    margin: 0;
+    padding: 10px;
+}
+.b-comments-list__item {
+    border-top: 1px solid rgb(232, 232, 232);
+    margin: 8px 0 0;
+    padding: 15px 0 0;
+}
+.b-comments-list__item:first-child {
+    border-top: 0 none;
+    margin-top: 0;
+    padding-top: 0;
+}
+.b-comments-list__item2 {
+    border-top: 1px solid rgb(232, 232, 232);
+    margin: 8px 0 0 40px;
+    padding: 15px 0 0;
+}
+.b-comments-list__item2:first-child {
+    border-top: 0 none;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+
+
+#paging_container .item {
+    height: 1%;
+    margin-bottom: 15px;
+}
+#paging_container .photo {
+    float: left;
+	width: 74px;
+	height: 74px;
+}
+#paging_container .photo img {
+    border-radius: 15px;
+    display: block;
+    width: 74px;
+}
+#paging_container .area {
+    margin-left: 85px;
+}
+#paging_container .name {
+    background: rgb(250, 250, 250) none repeat scroll 0 0;
+    border: 1px solid #b4b4b4;
+    padding: 0 11px;
+}
+#paging_container .name span {
+    color: rgb(185, 0, 0);
+    display: block;
+    line-height: 20px;
+}
+#paging_container .item .time {
+    background: transparent url("clock000.gif")/*tpa=http://blogistars.com/ds/lc/afrikantova/clock000.gif*/ no-repeat scroll 0 50%;
+    color: rgb(170, 170, 170);
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 20px;
+    padding: 0 0 0 20px;
+}
+#paging_container .name span em {
+    color: rgb(158, 148, 148);
+    font-size: 12px;
+}
+#paging_container .comment {
+    background: transparent none repeat scroll 0 0;
+    border-color: #b4b4b4;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    padding: 5px 0 6px 11px;
+}
+#paging_container .comment p {
+    font-size: 12px;
+    margin: 0;
+    padding: 5px;
+}
+#paging_container .comment img {
+    display: block;
+    margin-top: 15px;
+}
+#paging_container input.comment-name-email {
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 13px;
+    height: 23px;
+    padding: 7px 10px;
+    width: 55%;
+}
+#paging_container .comment-form {
+    background: #e5e5e5 none repeat scroll 0 0;
+    border-radius: 8px;
+    padding: 15px;
+}
+#paging_container textarea#comment {
+    width: 95%;
+}
+#paging_container textarea.comment-textarea {
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 5px;
+    font-family: Helvetica;
+    font-size: 13px;
+    height: 110px;
+    padding: 7px 10px;
+    width: 95%;
+}
+#paging_container textarea.comment-textarea:focus {
+    outline: medium none !important;
+}
+#paging_container .page_navigation {
+    margin: 10px 0 15px;
+    text-align: center;
+}
+#paging_container .page_navigation .previous_link, .page_navigation .next_link {
+    color: rgb(8, 134, 38);
+    text-decoration: none;
+}
+#paging_container .page_navigation .page_link {
+    border-radius: 3px;
+    color: rgb(8, 134, 38);
+    margin: 3px 5px;
+    padding: 2px 5px;
+    text-decoration: none;
+}
+#paging_container .page_navigation .page_link.active_page {
+    background-color: #999;
+    color: rgb(10, 120, 194);
+}
+#paging_container .page_navigation .page_link:hover {
+    background-color: rgb(239, 239, 239);
+}
